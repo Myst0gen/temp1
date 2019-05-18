@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <style>
+    .sidenav{
+      height: 100%;
+      width: 250px;
+      position:fixed;
+      color:white;
+      background-image:url('img.jpg');
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+  .list-group a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.over{
+  position: relative;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.9);
+  height:100%;
+  width:250px;
+  padding:20px;
+}
+
+#overlay1,#overlay2,#overlay3,#overlay4 {
+  position: absolute;
+  width:65px;
+  height: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index:2;
+  cursor: pointer;
+  margin-left:10%;
+  border-radius:4px;
+  text-align: center;
+}
+
+#overlay1{
+  background-color:#2ECB7D;
+}
+
+#overlay2{
+  background-color:orange;
+}
+
+#overlay3{
+  background-color:rgb(32, 135, 204);
+}
+
+#overlay4{
+  background-color:rgb(194, 44, 24);
+}
+
+.card{
+  margin-top:16%;
+
+}
+
+.card-body{
+  text-align: right;
+}
+
+    #mainbody {
+    transition: margin-left .5s;
+    padding: 0px;
+    margin-left: 250px;
+}
+
+.list-group .list-group-item{
+  padding:10px;
+  text-align:center;
+  background-color: transparent;
+  font-size:15px;
+  color:white;
+  position: sticky;
+}
+
+.list-group .list-group-item:hover{
+  background-color:rgba(61, 61, 61,0.8);
+  border-radius:3px;
+}
+
+.list-group  .list-group-item:focus{
+  background-color:#2ECB7D;
+  opacity:1;
+  border-radius:3px;
+  box-shadow:0 4px 8px 0 rgba(34, 182, 133, 0.1), 0 6px 20px 0 rgba(255, 245, 245, 0.10);
+}
+
+.navbar{
+   border-bottom: 1px solid #B1B1B1;
+}
+  </style>
+</head>
+<body>
+  <div class="sidenav" id="sidenav">
+    <div class="over">
+        <div class="list-group ">
+            <a href="#" class="list-group-item list-group-item-action">First item</a>
+            <a href="#" class="list-group-item list-group-item-action">Second item</a>
+            <a href="#" class="list-group-item list-group-item-action">Third item</a>
+            <a href="#" class="list-group-item list-group-item-action">First item</a>
+            <a href="#" class="list-group-item list-group-item-action">Second item</a>
+            <a href="#" class="list-group-item list-group-item-action">Third item</a>
+          </div>
+    </div>
+      <!-- -->
+  </div>
+  <div id="mainbody">
+      <nav class="navbar navbar-expand-md">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">Navbar</a>
+        
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="link1" >Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> 
+            </ul>
+          </div> 
+        </nav>
+        <div class="container">
+          <div class="row" style="margin-top:5%;">
+            <div class="col-sm-3">
+                <div id="overlay1"></div>
+             <div class="card">
+              
+               <div class="card-body">
+                  asdasdasd
+                </div>
+             </div>
+            </div>
+            <div class="col-sm-3">
+                <div id="overlay2" >
+                    <i class='far fa-calendar' style='font-size:36px;margin-top:10%;'></i>
+                </div>
+                <div class="card">
+                   
+                    <div class="card-body">
+                      asdasdasd
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-3">
+                  <div id="overlay3" ></div>
+                  <div class="card">
+                       
+                      <div class="card-body">
+                          asdasdasd
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="overlay4" ></div>
+                    <div class="card">
+                        <div class="card-body">
+                            asdasdasd
+                          </div>
+                      </div>
+                  </div>
+          </div>
+            <h1>asdasdsadsadsda</h1>  
+            <button type="button" class="btn btn-danger" onclick="openNav()">click me </button>
+            <button type="button" class="btn btn-danger" onclick="closeNav()">clikcme  </button>
+          <br><br>
+        <div>
+            
+            <div class="card">
+                <div class="card-header">
+                  asdasdad
+                </div> <div class="card-body">
+                    asdasdasd
+                  </div>
+              </div>
+        </div>
+         
+      
+  </div>
+</body>
+<script>
+
+  function openNav() {
+      document.getElementById('sidenav').style.width="250px";
+      document.getElementById('mainbody').style.marginLeft="250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById('sidenav').style.width="0px";
+  document.getElementById('mainbody').style.marginLeft="0px";
+}
+
+      </script>
+</html>
